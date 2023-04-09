@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Card = ({ movie }) => (
   <div className="card">
-    <img className="movie-img" src="https://teaser-trailer.com/wp-content/uploads/Daniel-Radcliffe-Jungle-New-Poster.jpg" alt="movies" />
+    <img className="movie-img" src={movie.image} alt="movies" />
     <h4 className="movie-title">{movie.title}</h4>
   </div>
 );
@@ -11,6 +11,7 @@ const Card = ({ movie }) => (
 Card.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
   }).isRequired,
 };
 
