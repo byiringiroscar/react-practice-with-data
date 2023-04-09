@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
     <ul className="right-nav">
-      <li><a className="logo" href="/">VUDU</a></li>
-      <li><a href="/">Movies</a></li>
-      <li><a href="/">TV</a></li>
-      <li><a href="/">MyVudu</a></li>
-      <li><a href="/">Free</a></li>
+      <li><Link className="logo" to="/">VUDU</Link></li>
+      <li><Link to="/">Movies</Link></li>
+      <li><Link to="/">TV</Link></li>
+      <li><Link to="/">MyVudu</Link></li>
+      <li><Link to="/">Free</Link></li>
     </ul>
     <ul className="left-nav">
-      <li><a href="/">Redeem</a></li>
-      <li><a href="/">Hi, Oscar</a></li>
+      <li><Link to="/">Redeem</Link></li>
+      <li><Link to="/">Hi, Oscar</Link></li>
     </ul>
   </header>
 );
