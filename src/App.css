@@ -260,3 +260,44 @@ form button:hover{
 .card-custom h4:hover{
   color: yellow;
 }
+
+.container-movie-free{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.free-movie{
+  height: 320px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+.free-movie:hover{
+  -webkit-box-shadow: -15px 7px 26px 14px rgba(35,101,156,1);
+  -moz-box-shadow: -15px 7px 26px 14px rgba(35,101,156,1);
+  box-shadow: -15px 7px 26px 14px rgba(35,101,156,1);
+}
+.free-movie img{
+  height: 100%;
+  width: 100%;
+}
+.play{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.free-movie:hover .play {
+  display: block;
+  height: 50px;
+  width: 50px;
+}

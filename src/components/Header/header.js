@@ -7,7 +7,7 @@ const Header = () => (
       <li><Link className="logo" to="/">VUDU</Link></li>
       <li><Link to="/series">Series</Link></li>
       <li><Link to="/custom">MyVudu</Link></li>
-      <li><Link to="/">Free</Link></li>
+      <li><Link to="/free">Free</Link></li>
     </ul>
     <ul className="left-nav">
       <li><Link to="/">Redeem</Link></li>
